@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Caracteres</title>
+</head>
+<body>
+    <input type="number" id="quantNumeros" placeholder="Quantidade de caracteres">
+    <button onclick="gerar()">GERAR</button>
+
+    <script>
+        alert("O gerador de caracteres irá gerar a quantidade que for passada no campo input | Caso queira caracteres diferentes, basta modificar a variável letra");
+
+        const repeticoesInput = document.querySelector("#quantNumeros");
+        const letra = "a";
+
+        function gerar(){
+            const repeticoes = repeticoesInput.value;
+            for(var i=0; i<repeticoes; i++){
+                document.write(letra);
+            }
+        }
+    </script>
+</body>
+</html>
